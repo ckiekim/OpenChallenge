@@ -14,7 +14,7 @@
 		var i, k, duplicated;
 		var names = input.split(",");
 		var newNames = new Array();
-		newNames[0] = names[0];
+		newNames[0] = names[0].trim();
 		for (i=1; i<names.length; i++) {
 			duplicated = false;
 			for (k=0; k<newNames.length; k++) {
@@ -24,7 +24,7 @@
 				}
 			}
 			if (!duplicated)
-				newNames[k] = names[i];
+				newNames[k] = names[i].trim();
 		}
 		newNames.sort();
 		document.write("1) 중복 이름을 제거한 후 오름차순 정렬<br>")
