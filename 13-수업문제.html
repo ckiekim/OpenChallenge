@@ -10,7 +10,6 @@
 		input { margin: 5px; }
 	</style>
 	<script>
-		var msg = "";
 		function check() {
 			var idObj = document.getElementById('id');
 			var pwdObj = document.getElementById('pwd');
@@ -18,6 +17,7 @@
 			var emailObj = document.getElementById('email');
 			var mobileObj = document.getElementById('mobile');
 
+			var msg = "";
 			var id = idObj.value;
 			var idRegEx = /^[a-z][a-zA-Z0-9]{7,11}$/;
 			if (!idRegEx.test(id))
